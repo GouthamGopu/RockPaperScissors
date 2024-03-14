@@ -3,13 +3,13 @@ let s,r,res;
     function pickcomputerMove(){
       r = Math.random();
       if(r >= 0 && r < 1/3){
-        s ='Rock';
+        s ='rock';
       }
       else if(r >= 1/3 && r < 2/3){
-        s = 'Paper';
+        s = 'paper';
       }
       else{
-        s = 'Scissors';
+        s = 'scissors';
       }
     }
     
@@ -17,37 +17,37 @@ let s,r,res;
 
     function result(computermove){
       pickcomputerMove();
-      if(computermove ==='Scissors'){
-        if(s === 'Rock'){
+      if(computermove ==='scissors'){
+        if(s === 'rock'){
         res ='You lose';
       }
-      else if(s === 'Paper'){
+      else if(s === 'paper'){
         res ='You win';
       }
-      else if(s === 'Scissors'){
+      else if(s === 'scissors'){
         res ='Tie';
       }
       }
-      else if(computermove==='Paper')
+      else if(computermove==='paper')
       {
-        if(s === 'Rock'){
+        if(s === 'rock'){
         res ='You win';
       }
-      else if(s === 'Paper'){
+      else if(s === 'paper'){
         res ='Tie';
       }
-      else if(s === 'Scissors'){
+      else if(s === 'scissors'){
         res ='You lose';
       }
       }
-      else if(computermove==='Rock'){
-        if(s === 'Rock'){
+      else if(computermove==='rock'){
+        if(s === 'rock'){
         res ='Tie';
       }
-      else if(s === 'Paper'){
+      else if(s === 'paper'){
         res ='You lose';
       }
-      else if(s === 'Scissors'){
+      else if(s === 'scissors'){
         res ='You win';
       }
       }
