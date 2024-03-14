@@ -102,21 +102,21 @@ let s,r,res;
     });
     document.querySelector('.rock').addEventListener('click',
     ()=>{
-      result('Rock');
+      result('rock');
     });
     document.querySelector('.paper').addEventListener('click',
     ()=>{
-      result('Paper');
+      result('paper');
     });
     document.querySelector('.Scissors').addEventListener('click',
     ()=>{
-      result('Scissors');
+      result('scissors');
     });
       document.body.addEventListener('keydown',
     (event) => {
-      if (event.key === 'r') result('Rock');
-      else if (event.key === 'p') result('Paper');
-      else if (event.key === 's') result('Scissors');
+      if (event.key === 'r') result('rock');
+      else if (event.key === 'p') result('paper');
+      else if (event.key === 's') result('scissors');
       else if (event.key === 'a') autoplay();
       else if (event.key === ' ') Resetscore();
     });
