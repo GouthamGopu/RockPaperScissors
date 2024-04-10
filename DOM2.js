@@ -63,7 +63,7 @@ let s,r,res;
       localStorage.setItem('Score',JSON.stringify(score));
 
       document.querySelector('.result').innerHTML=res;
-      document.querySelector('.moves').innerHTML=`You <img class="move-img" src="images/${computermove}-emoji.png"> <img class="move-img" src="images/${s}-emoji.png"> Computer`;
+      document.querySelector('.moves').innerHTML=`You <img class="move-img" src="images/${computermove}-emoji.png" alt="${computermove}"> <img class="move-img" src="images/${s}-emoji.png" alt="${s}"> Computer`;
       updateScore();
     }
     function Resetscore(){
